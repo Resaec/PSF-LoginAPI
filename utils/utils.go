@@ -29,11 +29,11 @@ func getPostgresConnectionURI() string {
 	if pgConnectionURI == "" {
 		pgConnectionURI = fmt.Sprintf(
 			PGConnectionURI,
-			os.Getenv("PGUSER"),
-			os.Getenv("PGPASS"),
-			os.Getenv("PGHOST"),
-			os.Getenv("PGPORT"),
-			os.Getenv("PGDB"),
+			os.Getenv("PG_USER"),
+			os.Getenv("PG_PASS"),
+			os.Getenv("PG_HOST"),
+			os.Getenv("PG_PORT"),
+			os.Getenv("PG_DB"),
 		)
 	}
 

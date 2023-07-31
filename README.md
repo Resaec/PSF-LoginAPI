@@ -11,11 +11,11 @@ Here it is used as authentication for **World Select** and **World** Servers.
 * JWT_KEY
 
 #### Database credentials
-* PGHOST
-* PGPASS
-* PGPORT
-* PGUSER
-* PGDB
+* PG_HOST
+* PG_PASS
+* PG_PORT
+* PG_USER
+* PG_DB
 
 #### GIN mode
 * GIN_MODE
