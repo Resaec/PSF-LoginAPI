@@ -40,14 +40,14 @@ func main() {
 	_ = router.SetTrustedProxies(nil)
 
 	// add live group
-	unauthenticated := router.Group("/live")
+	unauthenticated := router.Group("/psf/live")
 	{
 		// setup routes
 		unauthenticated.GET("/version", endpoints.Version)
 		unauthenticated.POST("/login", endpoints.Login)
 	}
 
-	authenticated := router.Group("/live")
+	authenticated := router.Group("/psf/live")
 	{
 		authenticated.Use(GetAuthMiddleware())
 
